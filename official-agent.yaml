@@ -1,3 +1,8 @@
+- hosts: localhost
+  tasks:
+    - name: Install Ansible Galaxy roles
+      command: ansible-galaxy install -r requirements.yml
+
 - name: Instalar agente zabbix con el rol
   hosts: all
   roles:
