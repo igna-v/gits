@@ -1,0 +1,21 @@
+- name: Test
+  hosts: all
+  tasks:
+   - name: debug group names
+     debug:
+        msg: '{{ group_names }}'
+   - name: debug group names
+     debug:
+        var: zabbix_agent_param_server
+   - name: distribucion
+     debug:
+        var: ansible_distribution
+   - name: major
+     debug:
+        var: ansible_distribution_major_version
+   - name: repo version
+     debug:
+        var:  repository_version #ansible_architecture #repository_version
+
+
+
