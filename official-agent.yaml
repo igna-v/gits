@@ -19,3 +19,11 @@
       agent_param_logfilesize: 1
       agent_param_hostinterfaceitem: 'system.hostname'
 
+- name: Cambiar propiedad de /opt/zabbix/ a zabbix.zabbix recursivamente
+  ansible.builtin.file:
+    path: /opt/zabbix/
+    state: directory
+    owner: zabbix
+    group: zabbix
+    recurse: yes
+
