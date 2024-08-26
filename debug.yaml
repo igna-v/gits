@@ -16,6 +16,14 @@
    - name: repo version
      debug:
         var:  repository_version #ansible_architecture #repository_version
+   - name: server
+     debug:
+        var: server_zabbix
+   - name: server active
+     debug:
+        var: server_active_zabbix
+
+
 
 
 
